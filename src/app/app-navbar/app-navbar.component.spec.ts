@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppNavbarComponent } from './app-navbar.component';
+import { MatIconModule, MatToolbarModule } from '@angular/material';
 
 describe('AppNavbarComponent', () => {
   let component: AppNavbarComponent;
@@ -8,7 +9,8 @@ describe('AppNavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppNavbarComponent ]
+      declarations: [ AppNavbarComponent ],
+      imports: [ MatIconModule, MatToolbarModule ]
     })
     .compileComponents();
   }));
