@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+body { background-color: whitesmoke; }
+
+app-homepage {display: flex; flex-direction: column; overflow-y: auto;}
+
+app-services {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
+
+app-testimonials {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
+
+app-contact {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
+
+app-root { position: absolute; top: 64px; bottom: 0px; display: flex; width: 100% }
