@@ -1,0 +1,19 @@
+header {
+  padding-top: 24px;
+}
+
+section {
+  padding: 16px;
+}
+
+img {
+  border-radius: 8px;
+  width: 120px;
+  height: auto;
+}
+
+.rating {
+  font-size: 20px;
+  font-weight: 500;
+  color: green;
+}

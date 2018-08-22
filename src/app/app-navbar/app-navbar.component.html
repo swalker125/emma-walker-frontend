@@ -1,18 +1,42 @@
 <mat-toolbar color="primary">
-  <a mat-flat-button routerLink="/">
-    <img src="src/paw.png" width="24px" height="24px" style="margin-right: 4px; margin-bottom: 3px; ">Home
-  </a>
-  <a mat-flat-button routerLink="/services">Services</a>
-  <a mat-flat-button routerLink="/testimonials">Testimonials</a>
-  <a mat-flat-button routerLink="/contactus">Contact Us</a>
-  <a mat-flat-button routerLink="/terms">Terms and Conditions</a>
-  <span class="example-spacer"></span>
-  <a mat-flat-button href="https://www.facebook.com/">
-    Facebook
-    <mat-icon style="margin-left: 4px; margin-bottom: 3px;">group</mat-icon>
-  </a>
-  <a mat-flat-button href="https://www.instagram.com/?hl=en">
-    Instagram
-    <mat-icon style="margin-left: 4px; margin-bottom: 3px;">group</mat-icon>
-  </a>
+  <mat-toolbar-row fxHide fxShow.gt-sm="true">
+    <a mat-flat-button routerLink="/">
+      <img class="navbar-image" src="src/paw.png" width="24px" height="24px">Home
+    </a>
+    <a mat-flat-button routerLink="/services">Services</a>
+    <a mat-flat-button routerLink="/testimonials">Testimonials</a>
+    <a mat-flat-button routerLink="/contactus">Contact Us</a>
+    <a mat-flat-button routerLink="/terms">Terms and Conditions</a>
+    <span class="example-spacer"></span>
+    <a mat-flat-button href="https://www.facebook.com/">
+      Facebook
+      <mat-icon class="navbar-image">group</mat-icon>
+    </a>
+    <a mat-flat-button href="https://www.instagram.com/?hl=en">
+      Instagram
+      <mat-icon class="navbar-image">group</mat-icon>
+    </a>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row fxShow fxHide.gt-sm="true">
+    <a mat-flat-button routerLink="/">
+      <img class="navbar-image" src="src/paw.png" width="24px" height="24px">Home
+    </a>
+    <span class="example-spacer"></span>
+    <a mat-flat-button href="https://www.facebook.com/">
+      Facebook
+      <mat-icon class="navbar-image">group</mat-icon>
+    </a>
+    <a mat-flat-button href="https://www.instagram.com/?hl=en">
+      Instagram
+      <mat-icon class="navbar-image">group</mat-icon>
+    </a>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="second-row" fxLayoutAlign="space-between" fxShow fxHide.gt-sm="true">
+    <a mat-flat-button routerLink="/services">Services</a>
+    <a mat-flat-button routerLink="/testimonials">Testimonials</a>
+    <a mat-flat-button routerLink="/contactus">Contact Us</a>
+    <a fxHide fxShow.gt-xs="true" mat-flat-button routerLink="/terms">Terms and Conditions</a>
+    <a fxShow fxHide.gt-xs="true" mat-flat-button routerLink="/terms">Ts & Cs</a>
+  </mat-toolbar-row>
 </mat-toolbar>

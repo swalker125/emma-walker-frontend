@@ -1,47 +1,63 @@
-<header fxFlex="100" style="background-color: #673ab7; color: white; padding-bottom: 40px; padding-top: 40px;">
+<header fxFlex="100">
   <div fxFill fxLayoutAlign="center center" fxLayout="column">
-    <div class="mat-h1" style="font-size: 56px; font-weight: 300; line-height: 56px; margin-top: 15px; margin-bottom: 15px">
+    <div class="title">
       Emma's Dog Services
     </div>
-    <div style="font-size: 18px; font-weight: 300; line-height: 28px; margin-bottom: 25px">A friendly face who loves dogs!</div>
+    <div class="subtitle">Subtitle stuff!</div>
     <div>
-      <button style="margin-top: 60px;" mat-raised-button>Contact Us!</button>
+      <a mat-raised-button routerLink="/contactus">Contact Us!</a>
     </div>
   </div>
 </header>
 
-<section fxFlex="60" style="padding: 16px;">
-  <div style="padding-top: 60px; padding-bottom: 60px;" fxLayout="row" fxLayoutAlign="space-evenly">
-    <div fxFlex="25">
-      <img src="src/Emma_and_Alfie.png" alt="Emma and Alfie" style="border-radius: 8px; width: 100%; height: auto;">
-    </div>
-    <div fxLayout="column" fxFlex="40">
-      <div class="mat-h1">Title</div>
-      <div class="mat-h3">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."
-      </div>
+<section fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <div fxFlex="40" fxFlex.xs="100" fxLayoutAlign="center center">
+    <img fxFlex="70" fxFlex.xs="60" src="src/Emma_and_Alfie.png" alt="Emma and Alfie">
+  </div>
+  <div class="text-container" fxLayout="column" fxFlex="50" fxLayoutAlign="center">
+    <div class="mat-h1">Title 1</div>
+    <div class="mat-h3">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+      consequat.
     </div>
   </div>
 </section>
 
-<section fxFlex="60" style="padding: 16px;">
-  <div style="padding-top: 60px; padding-bottom: 60px;" fxLayout="row" fxLayoutAlign="space-evenly">
-    <div fxLayout="column" fxFlex="40">
-      <div class="mat-h1">Title</div>
-      <div class="mat-h3">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."
-      </div>
+<section fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <div fxHide fxShow.xs="true" fxFlex="40" fxFlex.xs="100" fxLayoutAlign="center center">
+    <img fxFlex="70" src="src/Dogs_In_EastPark.png" alt="Dogs in East Park">
+  </div>
+  <div class="text-container" fxLayout="column" fxFlex="50" fxLayoutAlign="center">
+    <div class="mat-h1">Title 2</div>
+    <div class="mat-h3">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
     </div>
-    <div fxFlex="25">
-      <img src="src/Dogs_In_EastPark.png" alt="Emma and Alfie" style="border-radius: 8px; width: 100%; height: auto;">
+  </div>
+  <div fxShow fxHide.xs="true" fxFlex="40" fxLayoutAlign="center center">
+    <img fxFlex="80" src="src/Dogs_In_EastPark.png" alt="Dogs in East Park">
+  </div>
+</section>
+
+
+<section fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+  <div fxFlex="40" fxFlex.xs="100"  fxLayoutAlign="center center">
+    <img fxFlex="70" fxFlex.xs="60" src="src/emma.png" alt="Emma">
+  </div>
+  <div class="text-container" fxLayout="column" fxFlex="50" fxLayoutAlign="center">
+    <div class="mat-h1">Title 3</div>
+    <div class="mat-h3">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+      consequat.
     </div>
   </div>
 </section>
+
+
+<div fxLayoutAlign="center center">
+  <a mat-raised-button color="primary" routerLink="/contactus">Contact Us!</a>
+</div>
+

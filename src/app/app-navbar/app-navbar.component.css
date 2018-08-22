@@ -1,3 +1,13 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.navbar-image {
+  margin-right: 4px;
+  margin-bottom: 3px;
+}
+
+.second-row {
+  height: 40px;
+  padding: 0;
+}
