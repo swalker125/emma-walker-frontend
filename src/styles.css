@@ -1,23 +1,26 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }
+html, body {
+  height: 100%;
+}
 
-body { background-color: whitesmoke; }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
+}
 
-app-homepage {display: flex; flex-direction: column; overflow-y: auto;}
+app-root {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  width: 100%
+}
 
-app-services {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
-
-app-testimonials {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
-
-app-contact {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
-
-app-terms-and-conditions {display: flex; flex-direction: column; overflow-y: auto; height: 100%; width: 100%;}
-
-app-root { position: absolute; top: 64px; bottom: 0; display: flex; width: 100% }
-
-@media (max-width:959px) {
+@media (max-width: 959px) {
   app-root {
     top: 96px;
   }
